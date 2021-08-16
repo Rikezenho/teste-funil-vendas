@@ -1,0 +1,27 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  padding: 0 20px;
+  height: 50px;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 0 20px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}

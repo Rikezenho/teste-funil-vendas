@@ -1,0 +1,14 @@
+.shelf {
+  display: flex;
+}
+
+.shelf-item {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-right: 10px;
+}
+
+.shelf-item h3 {
+  margin-top: 0;
+}
