@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { store } from "../../store";
 import { cartRemove } from "../../store/cart.actions";
+import { pushToDataLayer } from "../../utils/dataLayer";
+import { REMOVE_FROM_CART } from "../../utils/events";
 import "./styles.css";
 
 export const CartItem = (props) => {
@@ -8,6 +10,7 @@ export const CartItem = (props) => {
   const { dispatch } = useContext(store);
 
   const removeFromCart = () => {
+    pushToDataLayer(REMOVE_FROM_CART, sku);
     dispatch(cartRemove(sku));
   };
 
