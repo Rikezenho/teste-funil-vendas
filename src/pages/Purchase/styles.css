@@ -1,0 +1,19 @@
+.receipt-list {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+}
+
+.receipt-item {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.receipt-item:last-child {
+  border-bottom: 0;
+}
+
+.receipt-item h3 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}

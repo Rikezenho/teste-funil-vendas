@@ -1,0 +1,8 @@
+.cart-item {
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  padding: 10px;
+}
+.cart-item h3 {
+  margin-top: 0;
+}

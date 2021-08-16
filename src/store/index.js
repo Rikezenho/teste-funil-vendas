@@ -22,9 +22,15 @@ const StateProvider = ({ children }) => {
         };
       case "removeProduct":
         const sku = action.payload;
-        const newState = state;
-        delete newState.cart[sku];
-        return newState;
+
+        const currentCart = Object.keys(state.cart).reduce((acc, curr) => {
+          if (curr !== sku) {
+            acc[curr] = state.cart[curr];
+          }
+          return acc;
+        }, {});
+
+        return { cart: currentCart };
       case "clearCart":
         return initialState;
       default:
